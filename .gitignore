@@ -396,3 +396,11 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+# LOCAL FILES ONLY
+.keeplocalonly/*
+.consideringWrappingForFutureDevelopment/*
+.considering/*
+.localOnly/*
+.__nEmulator.NET__/*
