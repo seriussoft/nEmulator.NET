@@ -404,3 +404,7 @@ FodyWeavers.xsd
 .considering/*
 .localOnly/*
 .__nEmulator.NET__/*
+/.tooling/.localOnly
+/@docs/.keepLocalOnly
+/@libs/.considering
+/@docs/.consideringWrappingForFutureDevelopment
