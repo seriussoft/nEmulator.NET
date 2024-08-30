@@ -1,0 +1,54 @@
+
+@using Blazor.Extensions
+@using Blazor.Extensions.Canvas.Canvas2D
+
+@inject IJSRuntime JsRuntime;
+@inject HttpClient HttpClient;
+
+<div id="webContent">
+  <!-- 
+      Let's make this a container with one of our code's childcontent properties, @WebContent,
+        akin to @ChildContent loaded up here...
+    -->
+</div>
+
+
+<div ide="main-canvas-container" class="canvas-container">
+  <BECanvas Width="@_canvasWidth" Height="@_canvasHeight" @ref="_canvasReference">
+  </BECanvas>
+</div>
+
+<div class="canvas-container">
+  <BECanvas Width="@_canvasWidth" Height="@_canvasHeight" @ref="_offscreenVanvasReference">
+  </BECanvas>
+</div>
+
+@code
+{
+  /*********************
+   *  
+   *  URLs:
+   *    - https://github.com/mizrael/chip8-emulator/blob/main/Chip8Emulator.BlazorWasm/Pages/Index.razor
+   *  
+   *****/
+  
+  
+  //is this the way to do this, again?
+  [Parameter]
+  public int CanvasWidth {get;set;}
+  
+  [Parameter]
+  public int CanvasHeight {get;set;}
+  
+  BECanvasComponent _canvasReference = null;
+  Canvas2DContext _outputCanvasContext;
+  
+  BECanvasComponent _offscreenCanvasReference;
+  Canvas2DContext _offscreenCanvasContext;
+  
+  const int CANVAS_WIDTH_DEFAULT = 800;
+  const int CANVAS_HIGHT_DEFAULT = 600;
+  
+  
+  
+}
