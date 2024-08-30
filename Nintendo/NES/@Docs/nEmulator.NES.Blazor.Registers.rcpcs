@@ -1,0 +1,58 @@
+//from other file, nEmulator.Shared.SUnion:
+
+
+using namespace NEmulator.Shared;
+
+public struct SUnion<TNumHi,TNumLo,TNumWhole>
+{
+  public TNumHi Hi {get;set;}
+  public TNumLo Lo {get;set;}
+  public TNumWhole Whole {get;set;}
+
+  public SUnion<TNumHi,TNumLo,TNumWhole> SetHi(TNumHi hi)
+  {
+  
+  }
+  
+  public SUnion<TNumHi,TNumLo,TNumWhole> SetLo(TNumLo lo)
+  {
+  
+  }
+  
+  public SUnion<TNumHi,TNumLo,TNumWhole> SetWhole(TNumWhole whole)
+  {
+    this.Whole = whole;
+    //this.Hi = ( (whole >> 4) << 4);
+    //  exa: (assuming that TNumHi and TNumLo are byte (uint8) and TNumWhole is ushort (uint16)
+    //  hi_bits_of_whole = 10101010b & 11110000b; //i.e. only grab hi bits...
+    //  this.Hi = (10100000b >> 4; //i.e. 1010b //shrink back down to TNumHi
+    this.Hi = (whole & 0xFF00) >> 4);
+    this.Lo = (whole & 0xFF;
+  }
+
+}
+
+
+//from nEmulator.NES.Blazor.Register:
+
+using Word = nEmulator.Shared.SUnion<byte,byte,ushort>;
+
+
+
+
+
+
+
+using namespace nEmulator.NES.Blazor;
+
+public class Register<TAddr,TValue>
+  where TAddr : struct, INumber
+  where TValue : struct, INumber
+                               , IComparable, IComparable<TValue>, IConvertible<TValue> 
+{
+  
+
+
+}
+
+public class 8bitReg : Register<Word,byte>
