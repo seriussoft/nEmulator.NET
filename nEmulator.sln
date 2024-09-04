@@ -200,7 +200,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nEmulator.NES.Shared", "Nin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nEmulator.NES.WinForms", "Nintendo\NES\nEmulator.NES.WinForms\nEmulator.NES.WinForms.csproj", "{704333B0-A8AC-4BC1-AD0C-FF7DD224B39B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nEmulator.Graphics.Blazor", "Shared\Graphics\nEmulator.Graphics.Blazor\nEmulator.Graphics.Blazor.csproj", "{612D332C-26A0-4CBE-840D-E7B0D0C04CF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nEmulator.Graphics.Blazor", "Shared\Graphics\nEmulator.Graphics.Blazor\nEmulator.Graphics.Blazor.csproj", "{612D332C-26A0-4CBE-840D-E7B0D0C04CF7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "z. Shared", "z. Shared", "{E9034BCE-327A-4CC2-897B-1A1B21C55193}"
 EndProject
@@ -222,9 +222,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WFT - Waiting For Turn", "W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WFT - Waiting For Turn", "WFT - Waiting For Turn", "{227A41B0-8E96-4ACD-AFA8-CB5AD3DA72E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nEmulator.Graphics.WinForms", "Shared\Graphics\nEmulator.Graphics.WinForms\nEmulator.Graphics.WinForms.csproj", "{048ABD41-06A1-4697-B1C3-AC70DB255B85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nEmulator.Graphics.WinForms", "Shared\Graphics\nEmulator.Graphics.WinForms\nEmulator.Graphics.WinForms.csproj", "{048ABD41-06A1-4697-B1C3-AC70DB255B85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nEmulator.Graphics.GDIPlus", "Shared\Graphics\nEmulator.Graphics.GDIPlus\nEmulator.Graphics.GDIPlus.csproj", "{F0D31096-9CD1-4928-97B5-772157169441}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nEmulator.Graphics.GDIPlus", "Shared\Graphics\nEmulator.Graphics.GDIPlus\nEmulator.Graphics.GDIPlus.csproj", "{F0D31096-9CD1-4928-97B5-772157169441}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nEmulator.Graphics", "Shared\Graphics\nEmulator.Graphics\nEmulator.Graphics.csproj", "{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -332,6 +334,18 @@ Global
 		{F0D31096-9CD1-4928-97B5-772157169441}.Release.NES|Any CPU.Build.0 = Release|Any CPU
 		{F0D31096-9CD1-4928-97B5-772157169441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0D31096-9CD1-4928-97B5-772157169441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Debug.GB|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Debug.GB|Any CPU.Build.0 = Debug|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Debug.NES|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Debug.NES|Any CPU.Build.0 = Debug|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Release.GB|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Release.GB|Any CPU.Build.0 = Release|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Release.NES|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Release.NES|Any CPU.Build.0 = Release|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -443,6 +457,7 @@ Global
 		{227A41B0-8E96-4ACD-AFA8-CB5AD3DA72E7} = {DCAD9CD9-1001-40C1-8783-99F86D3CB5FD}
 		{048ABD41-06A1-4697-B1C3-AC70DB255B85} = {6B8EE428-88B2-4971-8D50-B2C075D4F391}
 		{F0D31096-9CD1-4928-97B5-772157169441} = {6B8EE428-88B2-4971-8D50-B2C075D4F391}
+		{1ED1FD71-2401-42DA-8AEB-BD6A5BBF134E} = {6B8EE428-88B2-4971-8D50-B2C075D4F391}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7AA2F969-20C6-442A-A481-F5BC651685FD}

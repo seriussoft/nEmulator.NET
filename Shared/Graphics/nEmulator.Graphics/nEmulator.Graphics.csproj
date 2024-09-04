@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Advanced\Gradients\" />
+    <Folder Include="Advanced\SVG\" />
+    <Folder Include="Advanced\Templates\" />
+    <Folder Include="Basic\Controls\" />
+    <Folder Include="Basic\Shapes\" />
+    <Folder Include="Core\BG\" />
+    <Folder Include="Core\Brushes\" />
+    <Folder Include="Core\Sprites\" />
+    <Folder Include="Core\Textures\" />
+    <Folder Include="Custom\CustomGradients\" />
+    <Folder Include="Extensions\BG\" />
+    <Folder Include="Extensions\Brushes\" />
+    <Folder Include="Extensions\Gradients\" />
+    <Folder Include="Extensions\Common\" />
+    <Folder Include="Extensions\Shapes\" />
+    <Folder Include="Extensions\Sprites\" />
+    <Folder Include="Extensions\Templates\" />
+    <Folder Include="Extensions\Textures\" />
+    <Folder Include="GIL\" />
+    <Folder Include="_Examples\" />
+  </ItemGroup>
+
+</Project>

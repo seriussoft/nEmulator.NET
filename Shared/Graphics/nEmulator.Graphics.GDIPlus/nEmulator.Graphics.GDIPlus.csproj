@@ -1,9 +1,50 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <!--<TargetFramework>net8.0</TargetFramework>-->
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+		<TargetFramework>net8.0-windows</TargetFramework>
+    
+    <UseWindowsForms>true</UseWindowsForms>
+    
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Core\_DoNotCompile_MovedToParentLibrary_\**" />
+    <EmbeddedResource Remove="Core\_DoNotCompile_MovedToParentLibrary_\**" />
+    <None Remove="Core\_DoNotCompile_MovedToParentLibrary_\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Advanced\Gradients\" />
+    <Folder Include="Advanced\SVG\" />
+    <Folder Include="Advanced\Templates\" />
+    <Folder Include="Basic\Controls\" />
+    <Folder Include="Core\Brushes\" />
+    <Folder Include="Core\BG\" />
+    <Folder Include="Core\Sprites\" />
+    <Folder Include="Core\Textures\" />
+    <Folder Include="Core\Shapes\" />
+    <Folder Include="Custom\CustomGradients\" />
+    <Folder Include="Basic\" />
+    <Folder Include="Basic\Shapes\" />
+    <Folder Include="Extensions\Gradients\" />
+    <Folder Include="Extensions\Brushes\" />
+    <Folder Include="Extensions\BG\" />
+    <Folder Include="Extensions\Sprites\" />
+    <Folder Include="Extensions\Textures\" />
+    <Folder Include="Extensions\Shapes\" />
+    <Folder Include="Extensions\Templates\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="8.0.8" />
+    <PackageReference Include="System.Drawing.Primitives" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\nEmulator.Graphics\nEmulator.Graphics.csproj" />
+  </ItemGroup>
 
 </Project>
